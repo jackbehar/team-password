@@ -36,7 +36,6 @@ Box.propTypes = {
   /**
  * The content of the box.
  */
-  /** @uxpinignoreprop */
   children: PropTypes.node,
 
   clone: PropTypes.bool,
