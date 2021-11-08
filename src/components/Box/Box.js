@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BoxM from '@mui/material/Box';
-import { styled } from '@mui/material/styles';
+
 
 
 
@@ -15,16 +15,7 @@ function Box(props) {
     <BoxM
       {...other}
     >
-      {!props.children ? (
-        <span>
-          <center>
-            <p>Drag components into this wrapper</p>
-          </center>
-        </span>
-      ) : (
-        props.children
-      )}
-
+        {props.children}
     </BoxM>
   );
 }

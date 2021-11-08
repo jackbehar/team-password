@@ -10,8 +10,8 @@ const boilerplateTheme = {
     },
     secondary: {
       main: "#63dae5",
-      // light: "#5ebf9926",
-      // dark: "#47b586",
+      light: "#5ebf9926",
+      dark: "#47b586",
       contrastText: "#ffffff"
     },
     text:{
@@ -21,7 +21,25 @@ const boilerplateTheme = {
   },
   typography: {
     fontFamily: 'Muli, sans-serif',
-    // fontSize: 16,
+    fontSize: 15,
+    button: {
+      textTransform: "capitalize",
+      fontWeight: "700",
+    },
+  },
+  components: {
+    // Name of the component
+    MuiButton: {
+      styleOverrides: {
+        // Name of the slot
+        root: {
+          borderRadius: 6,
+        },
+        text:{
+          fontWeight: "500",
+        }
+      },
+    },
   },
 };
 

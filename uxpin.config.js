@@ -131,6 +131,12 @@ module.exports = {
           ]  
         },
         {
+          name: "TeamPassword",
+          include: [
+            "src/components/TpAppbar/TpAppbar.js",
+          ]
+        },
+        {
           name: "HTML Wrappers and Spacing",
           include: [
             "src/components/Image/Image.js",
