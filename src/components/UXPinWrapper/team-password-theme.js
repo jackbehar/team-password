@@ -17,13 +17,13 @@ const boilerplateTheme = {
       contrastText: "#ffffff"
     },
     text: {
-      primary: "#1e4d6a",
+      primary: "#10313e",
       secondary: "#63dae5"
     },
   },
   typography: {
     fontFamily: 'Muli, sans-serif',
-    // fontSize: 15,
+    fontSize: 15,
     h2: {
       fontWeight: "700",
       fontSize: "44px",
