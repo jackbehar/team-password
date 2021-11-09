@@ -23,11 +23,20 @@ const boilerplateTheme = {
   },
   typography: {
     fontFamily: 'Muli, sans-serif',
-    fontSize: 15,
+    // fontSize: 15,
     h2: {
       fontWeight: "700",
       fontSize: "44px",
       lineHeight: "56px"
+    },
+    h3: {
+      fontWeight: "500",
+      fontSize: "44px",
+      // lineHeight: "56px"
+    },
+    body1:{
+      fontSize:"18px",
+      lineHeight: "28px",
     },
     button: {
       textTransform: "capitalize",
