@@ -134,6 +134,7 @@ module.exports = {
           name: "TeamPassword",
           include: [
             "src/components/TpAppbar/TpAppbar.js",
+            "src/components/TpFeatureCallout/TpFeatureCallout.js",
           ]
         },
         {
