@@ -5,16 +5,22 @@ const boilerplateTheme = {
   // please see the full theme object here: https://mui.com/customization/default-theme/
   palette: {
     primary: {
-      main: "#1e4d6a",
-      light: "#63dae5",
-      dark: "#10313e",
+      main: "#204C6A",
+      light: "#507898",
+      dark: "#11313E",
       contrastText: "#ffffff"
     },
     secondary: {
-      main: "#63dae5",
-      light: "#f2f5f9",
-      dark: "#47b586",
+      main: "#63DAE5",
+      light: "#9AFFFF",
+      dark: "#1FA8B3",
       contrastText: "#ffffff"
+    },
+    background: {
+      main: '#F2F5F9',
+      light: "#F9F9F9",
+      dark: "#DFE7EE",
+      contrastText: '#fff',
     },
     text: {
       primary: "#10313e",

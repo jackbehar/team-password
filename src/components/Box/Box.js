@@ -1,10 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import BoxM from '@mui/material/Box';
+import { paletteColors } from '../UXPinWrapper/colors'
 
+// let arr1 = palletteMain;
+// let arr2 = palletteSecondary;
+// // let primes = palletteMain & palletteSecondary;
 
+// // const allColors = {...palletteMain, ...palletteSecondary};
+// console.log(primes);
+// let allColors = palletteMain.concat(palletteSecondary);
+// let numbersToString = JSON.stringify(allColors);
 
-
+// console.log(toString(allColors));
+// console.log(numbersToString);
 /**
  * @uxpinwrappers
  * SkipContainerWrapper
@@ -35,11 +44,8 @@ Box.propTypes = {
    * Color of text
    */
 
-  color: PropTypes.oneOf(['white', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey.500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'warning.main', 'info.main', 'success.main', 'text.primary', 'text.secondary', 'text.disabled']),
-
-  bgcolor: PropTypes.oneOf(['white', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey500', 'primary.main', 'primary.light', 'primary.dark', 'secondary.main', 'secondary.light', 'secondary.dark', 'error.main', 'warning.main', 'info.main', 'success.main', 'text.primary', 'text.secondary', 'text.disabled']),
-
-
+color: PropTypes.oneOf(paletteColors),
+bgcolor: PropTypes.oneOf(paletteColors),
 
   /**
    * All Padding.
