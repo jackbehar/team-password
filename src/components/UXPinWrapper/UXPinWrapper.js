@@ -10,7 +10,7 @@ export default function UXPinWrapper({ children }) {
     let muli = document.createElement("link");
     muli.setAttribute(
       "href",
-      "https://fonts.googleapis.com/css?family=Muli:400,500,300,700"
+      "https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700"
     );
     muli.setAttribute("rel", "stylesheet");
     muli.setAttribute("id", "mui-merge-font");

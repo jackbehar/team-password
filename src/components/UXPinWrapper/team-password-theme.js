@@ -30,6 +30,11 @@ const boilerplateTheme = {
   typography: {
     fontFamily: 'Muli, sans-serif',
     fontSize: 15,
+    h1: {
+      fontWeight: "600",
+      fontSize: "64px",
+      lineHeight: "65px"
+    },
     h2: {
       fontWeight: "700",
       fontSize: "44px",
