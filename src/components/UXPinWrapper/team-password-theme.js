@@ -33,7 +33,7 @@ const boilerplateTheme = {
     h1: {
       fontWeight: "600",
       fontSize: "64px",
-      lineHeight: "65px"
+      lineHeight: "77px"
     },
     h2: {
       fontWeight: "700",
