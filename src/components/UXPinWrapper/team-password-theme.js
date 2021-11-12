@@ -13,7 +13,7 @@ const boilerplateTheme = {
     secondary: {
       main: "#63DAE5",
       light: "#9AFFFF",
-      dark: "#004e67",
+      dark: "#1FA8B3",
       contrastText: "#ffffff"
     },
     background: {
