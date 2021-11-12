@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TextFieldM from "@mui/material/TextField";
-
+import { paletteColors } from '../UXPinWrapper/colors'
 
 function TextField(props) {
   return (
-    <TextFieldM {...props} />
+    <TextFieldM {...props}/>
   )
 }
 
@@ -148,7 +148,6 @@ TextField.propTypes = {
   /** The system prop that allows defining 
    * system overrides as well as additional CSS styles. 
    * See the `sx` page for more details. https://mui.com/system/the-sx-prop/ */
-  /** @uxpinignoreprop */
   sx: PropTypes.object
 };
 

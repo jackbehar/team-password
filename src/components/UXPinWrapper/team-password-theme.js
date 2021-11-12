@@ -71,11 +71,16 @@ const boilerplateTheme = {
         },
       },
     },
-    // MuiIcon:{
-    //   root:{
-    //     fontFamily: 'Material Icons Outlined'
-    //   },
-    // },
+    MuiInputBase:{
+      styleOverrides: {
+      root:{
+        backgroundColor: '#ffffff',
+      },
+      input:{
+        // textAlign: "center"
+      },
+    }
+    },
   },
 };
 
