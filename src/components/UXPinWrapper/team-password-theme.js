@@ -64,6 +64,10 @@ const boilerplateTheme = {
         },
         text: {
           fontWeight: "500",
+        },
+        sizeLarge:{
+          fontSize: 18,
+          height: 54
         }
       },
     },
