@@ -1,160 +1,319 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import BoxM from '@mui/material/Box';
+import { Box as BoxM, ThemeProvider } from '@mui/system';
 import { paletteColors } from '../UXPinWrapper/colors'
 
-// let arr1 = palletteMain;
-// let arr2 = palletteSecondary;
-// // let primes = palletteMain & palletteSecondary;
-
-// // const allColors = {...palletteMain, ...palletteSecondary};
-// console.log(primes);
-// let allColors = palletteMain.concat(palletteSecondary);
-// let numbersToString = JSON.stringify(allColors);
-
-// console.log(toString(allColors));
-// console.log(numbersToString);
 /**
  * @uxpinwrappers
- * SkipContainerWrapper
+ * NonResizableWrapper
  */
 function Box(props) {
+
+  const commonStyles = {
+    borderTopColor: props.borderColor,
+    borderRightColor: props.borderColor,
+    borderBottomColor: props.borderColor,
+    borderLeftColor: props.borderColor,
+    textDecoration: props.textDecoration
+  };
+
   const { uxpinRef, ...other } = props;
+
   return (
-    <BoxM
-      {...other}
+    <ThemeProvider
+      theme={{
+        spacing: 1,
+      }}
     >
-        {props.children}
-    </BoxM>
+      <div style={{display: "table"}} ref={uxpinRef} >
+      <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM>
+      </div>
+    </ThemeProvider>
   );
 }
 
 
 Box.propTypes = {
 
+  width: PropTypes.number,
 
-  /**
- * The content of the box.
- */
-  children: PropTypes.node,
+  height: PropTypes.number,
 
-  clone: PropTypes.bool,
+  bgcolor: PropTypes.oneOf(paletteColors),
 
-  /**
-   * Color of text
-   */
+  /** @uxpinignoreprop */
+  padding: PropTypes.number,
 
-color: PropTypes.oneOf(paletteColors),
-bgcolor: PropTypes.oneOf(paletteColors),
+  paddingTop: PropTypes.number,
 
-  /**
-   * All Padding.
-   * In pixels
-   */
-  padding: PropTypes.string,
+  paddingRight: PropTypes.number,
 
-  /**
-   * Top Padding.
-   * In pixels
-   */
-  paddingTop: PropTypes.string,
-  /**
-   * Right Padding.
-   * In pixels
-   */
-  paddingRight: PropTypes.string,
-  /**
-   * Bottom Padding.
-   * In pixels
-   */
-  paddingBottom: PropTypes.string,
-  /**
-   * Left Padding.
-   * In pixels  
-   */
-  paddingLeft: PropTypes.string,
-  /**
-   * All Margin.
-   * In pixels
-   */
-  margin: PropTypes.string,
-  /**
-   * Top margin.
-   * In pixels
-   */
-  marginTop: PropTypes.string,
-  /**
-   * Right margin.
-   * In pixels
-   */
-  marginRight: PropTypes.string,
-  /**
-   * Bottom margin.
-   * In pixels
-   */
-  marginBottom: PropTypes.string,
-  /**
-   * Left margin.
-   * In pixels
-   */
-  marginLeft: PropTypes.string,
+  paddingBottom: PropTypes.number,
 
-  /**
-   * Border margin.
-   * In pixels
-   */
-  border: PropTypes.number,
+  paddingLeft: PropTypes.number,
 
-  /**
-   * Border Top.
-   * In pixels
-   */
+  /** @uxpinignoreprop */
+  margin: PropTypes.number,
+
+  marginTop: PropTypes.number,
+
+  marginRight: PropTypes.number,
+
+  marginBottom: PropTypes.number,
+
+  marginLeft: PropTypes.number,
+
+  border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
+
+  borderColor: PropTypes.oneOf(paletteColors),
+
   borderTop: PropTypes.number,
 
-  /**
-   * Border margin.
-   * In pixels
-   */
   borderRight: PropTypes.number,
 
-  /**
-   * Border margin.
-   * In pixels
-   */
   borderBottom: PropTypes.number,
 
-  /**
-   * Border margin.
-   * In pixels
-   */
   borderLeft: PropTypes.number,
 
-  borderColor: PropTypes.oneOf(['white', 'grey.100', 'grey.200', 'grey.300', 'grey.400', 'grey500', 'primary.main', 'secondary.main', 'error.main', 'warning.main', 'info.main', 'success.main', 'text.primary', 'text.secondary', 'text.disabled']),
-
-  borderRadius: PropTypes.string,
+  borderRadius: PropTypes.number,
 
   boxShadow: PropTypes.number,
 
-  textAlign: PropTypes.oneOf(["left", "center", "right"]),
-  // textOverflow: PropTypes.oneOf(["clip", "ellipsis"]),
-  /**
- * Accepts all system properties, as well as any valid CSS properties.
- */
+  /** @uxpinignoreprop */
+  displayPrint: PropTypes.string,
+
+  typography: PropTypes.oneOf([
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "subtitle1",
+    "subtitle2",
+    "body1",
+    "body2",
+    "caption",
+    "button",
+    "overline",
+    "inherit"
+  ]),
+
+  color: PropTypes.oneOf(paletteColors),
+
+  fontFamily: PropTypes.string,
+
+  fontSize: PropTypes.number,
+
+  fontStyle: PropTypes.oneOf([
+    "normal",
+    "italic",
+    "oblique",
+  ]),
+
+  fontWeight: PropTypes.oneOf([
+    "light",
+    "medium",
+    "normal",
+    "bold",
+    "900",
+  ]),
+
+  letterSpacing: PropTypes.number,
+
+  lineHeight: PropTypes.number,
+
+  textAlign: PropTypes.oneOf([
+    "left",
+    "center",
+    "right"
+  ]),
+
+  textDecoration: PropTypes.oneOf([
+    "underline",
+    "overline",
+    "line-through"
+  ]),
+
+  display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
+  
+  justifyContent: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "space-between",
+    "space-around",
+    "space-evenly"
+  ]),
+
+  alignContent: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "flex-start",
+    "flex-end",
+    "space-between",
+    "space-around"
+  ]),
+
+  alignItems: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "stretch",
+    "baseline"
+  ]),
+
+  alignSelf: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "start",
+    "end",
+  ]),
+
+  /** @uxpinignoreprop */
+  flex: PropTypes.string,
+
+  flexDirection: PropTypes.oneOf([
+    "row",
+    "row-reverse",
+    "column",
+    "column-reverse"
+  ]),
+
+  flexWrap:  PropTypes.oneOf([
+    "nowrap",
+    "wrap",
+    "wrap-reverse"
+  ]),
+
+  flexGrow: PropTypes.number,
+
+  flexShrink: PropTypes.number,
+
+  order: PropTypes.number,
+
+  gap: PropTypes.number,
+
+  /** @uxpinignoreprop */
+  columnGap: PropTypes.number,
+
+  /** @uxpinignoreprop */
+  rowGap: PropTypes.number,
+
+  /** @uxpinignoreprop */
+  gridColumn: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridRow: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridAutoFlow: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridAutoColumns: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridAutoRows: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridTemplateColumns: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridTemplateRows: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridTemplateAreas: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  gridArea: PropTypes.string,
+
+
+
+  position: PropTypes.oneOf([
+    "static",
+    "relative",
+    "absolute",
+    "fixed",
+    "sticky",
+  ]),
+
+  top: PropTypes.number,
+
+  right: PropTypes.number,
+
+  bottom: PropTypes.number,
+
+  left: PropTypes.number,
+
+  zIndex: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  maxHeight: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  maxWidth: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  minHeight: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  minWidth: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  boxSizing: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  mx: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  my: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginInline: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginInlineStart: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginInlineEnd: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginBlock: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginBlockStart: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  marginBlockEnd: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  px: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  py: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingInline: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingInlineStart: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingInlineEnd: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingBlock: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingBlockStart: PropTypes.string,
+
+  /** @uxpinignoreprop */
+  paddingBlockEnd: PropTypes.string,
+
   sx: PropTypes.object,
+
+  /** @uxpinignoreprop */
+  children: PropTypes.node,
 };
-Box.defaultProps = {
-  sx:{
-  "padding":"",
-  "padding-top":"",
-  "padding-right":"",
-  "padding-bottom":"",
-  "padding-left":"",
-  "margin":"",
-  "margin-top":"",
-  "margin-right":"",
-  "margin-bottom":"",
-  "margin-left":"",
-}
-}
 
 export default Box;

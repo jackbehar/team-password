@@ -45,8 +45,8 @@ const boilerplateTheme = {
       fontSize: "44px",
       // lineHeight: "56px"
     },
-    body1:{
-      fontSize:"18px",
+    body1: {
+      fontSize: "18px",
       lineHeight: "28px",
     },
     button: {
@@ -65,7 +65,7 @@ const boilerplateTheme = {
         text: {
           fontWeight: "500",
         },
-        sizeLarge:{
+        sizeLarge: {
           fontSize: 18,
           height: 54
         }
@@ -80,15 +80,18 @@ const boilerplateTheme = {
         },
       },
     },
-    MuiInputBase:{
+    MuiInputBase: {
       styleOverrides: {
-      root:{
-        backgroundColor: '#ffffff',
-      },
-      input:{
-        // textAlign: "center"
-      },
-    }
+        root: {
+          backgroundColor: '#ffffff',
+        },
+        input: {
+          // textAlign: "center"
+        },
+      }
+    },
+    '.MuiBox-root': {
+      bgcolor: "#000000"
     },
   },
 };
