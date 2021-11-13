@@ -194,38 +194,6 @@ Box.propTypes = {
 
   gap: PropTypes.number,
 
-  // /** @uxpinignoreprop */
-  // columnGap: PropTypes.number,
-
-  // /** @uxpinignoreprop */
-  // rowGap: PropTypes.number,
-
-  // /** @uxpinignoreprop */
-  // gridColumn: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridRow: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoFlow: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoColumns: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoRows: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateColumns: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateRows: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateAreas: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridArea: PropTypes.string,
 
 
 
@@ -247,69 +215,7 @@ Box.propTypes = {
 
   zIndex: PropTypes.string,
 
-  // /** @uxpinignoreprop */
-  // maxHeight: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // maxWidth: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // minHeight: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // minWidth: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // boxSizing: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // mx: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // my: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginInline: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginInlineStart: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginInlineEnd: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginBlock: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginBlockStart: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // marginBlockEnd: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // px: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // py: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingInline: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingInlineStart: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingInlineEnd: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingBlock: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingBlockStart: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // paddingBlockEnd: PropTypes.string,
-
+  // 
   sx: PropTypes.object,
 
   /** @uxpinignoreprop */
