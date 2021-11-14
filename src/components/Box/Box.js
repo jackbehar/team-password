@@ -82,52 +82,52 @@ Box.propTypes = {
   /** @uxpinignoreprop */
   displayPrint: PropTypes.string,
 
-  // typography: PropTypes.oneOf([
-  //   "h1",
-  //   "h2",
-  //   "h3",
-  //   "h4",
-  //   "h5",
-  //   "h6",
-  //   "subtitle1",
-  //   "subtitle2",
-  //   "body1",
-  //   "body2",
-  //   "caption",
-  //   "button",
-  //   "overline",
-  //   "inherit"
-  // ]),
+  typography: PropTypes.oneOf([
+    "h1",
+    "h2",
+    "h3",
+    "h4",
+    "h5",
+    "h6",
+    "subtitle1",
+    "subtitle2",
+    "body1",
+    "body2",
+    "caption",
+    "button",
+    "overline",
+    "inherit"
+  ]),
 
-  // color: PropTypes.oneOf(paletteColors),
+  color: PropTypes.oneOf(paletteColors),
 
-  // fontFamily: PropTypes.string,
+  fontFamily: PropTypes.string,
 
-  // fontSize: PropTypes.number,
+  fontSize: PropTypes.number,
 
-  // fontStyle: PropTypes.oneOf([
-  //   "normal",
-  //   "italic",
-  //   "oblique",
-  // ]),
+  fontStyle: PropTypes.oneOf([
+    "normal",
+    "italic",
+    "oblique",
+  ]),
 
-  // fontWeight: PropTypes.oneOf([
-  //   "light",
-  //   "medium",
-  //   "normal",
-  //   "bold",
-  //   "900",
-  // ]),
+  fontWeight: PropTypes.oneOf([
+    "light",
+    "medium",
+    "normal",
+    "bold",
+    "900",
+  ]),
 
-  // letterSpacing: PropTypes.number,
+  letterSpacing: PropTypes.number,
 
-  // lineHeight: PropTypes.number,
+  lineHeight: PropTypes.number,
 
-  // textAlign: PropTypes.oneOf([
-  //   "left",
-  //   "center",
-  //   "right"
-  // ]),
+  textAlign: PropTypes.oneOf([
+    "left",
+    "center",
+    "right"
+  ]),
 
   // textDecoration: PropTypes.oneOf([
   //   "underline",
