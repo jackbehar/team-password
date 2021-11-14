@@ -129,22 +129,22 @@ Box.propTypes = {
     "right"
   ]),
 
-  // textDecoration: PropTypes.oneOf([
-  //   "underline",
-  //   "overline",
-  //   "line-through"
-  // ]),
+  textDecoration: PropTypes.oneOf([
+    "underline",
+    "overline",
+    "line-through"
+  ]),
 
-  // display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
+  display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
   
-  // justifyContent: PropTypes.oneOf([
-  //   "flex-start",
-  //   "center",
-  //   "flex-end",
-  //   "space-between",
-  //   "space-around",
-  //   "space-evenly"
-  // ]),
+  justifyContent: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "space-between",
+    "space-around",
+    "space-evenly"
+  ]),
 
   // alignContent: PropTypes.oneOf([
   //   "stretch",
