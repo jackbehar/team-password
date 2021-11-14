@@ -106,9 +106,9 @@ module.exports = {
           include: [
             'src/components/Box/Box.js',
             'src/components/Grid/Grid.js',
-            'src/components/ImageList/ImageList.js',
-            'src/components/ImageListItem/ImageListItem.js',
-            'src/components/ImageListItemBar/ImageListItemBar.js',
+            // 'src/components/ImageList/ImageList.js',
+            // 'src/components/ImageListItem/ImageListItem.js',
+            // 'src/components/ImageListItemBar/ImageListItemBar.js',
             'src/components/Stack/Stack.js',
           ]  
         },
