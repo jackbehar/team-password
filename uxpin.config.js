@@ -49,7 +49,6 @@ module.exports = {
             'src/components/ListSubheader/ListSubheader.js',
             'src/components/Tooltip/Tooltip.js',
             'src/components/Typography/Typography.js',
-            'src/components/Typography/Typography.js'
           ],
         },
         {
