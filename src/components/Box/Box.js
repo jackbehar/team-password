@@ -22,7 +22,7 @@ function Box(props) {
   return (
     <ThemeProvider
       theme={{
-        spacing: 1,
+        // spacing: 1,
       }}
     >
       <div style={{display: "table"}} ref={uxpinRef} >
