@@ -10,7 +10,7 @@ function Typography(props) {
   return (
     <ThemeProvider
       theme={{
-        spacing: 1,
+        // spacing: 1,
       }}
     >
       <TypographyM {...props} style={{ textDecoration: props.textDecoration }}>{props.children}</TypographyM>
