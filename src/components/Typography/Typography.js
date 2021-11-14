@@ -144,13 +144,13 @@ Typography.propTypes = {
    * The default mapping is the following:
    * @uxpinignoreprop
    */
-  headlineMapping: PropTypes.object,
+  // headlineMapping: PropTypes.object,
 
   /**
    * Override or extend the styles applied to the component.
    * @uxpinignoreprop
    */
-  classes: PropTypes.object,
+  // classes: PropTypes.object,
 
   /**
    * All Padding.

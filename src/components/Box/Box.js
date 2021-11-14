@@ -135,7 +135,7 @@ Box.propTypes = {
     "line-through"
   ]),
 
-  // display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
+  display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
   
   justifyContent: PropTypes.oneOf([
     "flex-start",
@@ -146,45 +146,45 @@ Box.propTypes = {
     "space-evenly"
   ]),
 
-  // alignContent: PropTypes.oneOf([
-  //   "stretch",
-  //   "center",
-  //   "flex-start",
-  //   "flex-end",
-  //   "space-between",
-  //   "space-around"
-  // ]),
+  alignContent: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "flex-start",
+    "flex-end",
+    "space-between",
+    "space-around"
+  ]),
 
-  // alignItems: PropTypes.oneOf([
-  //   "flex-start",
-  //   "center",
-  //   "flex-end",
-  //   "stretch",
-  //   "baseline"
-  // ]),
+  alignItems: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "stretch",
+    "baseline"
+  ]),
 
-  // alignSelf: PropTypes.oneOf([
-  //   "stretch",
-  //   "center",
-  //   "start",
-  //   "end",
-  // ]),
+  alignSelf: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "start",
+    "end",
+  ]),
 
   // /** @uxpinignoreprop */
   // flex: PropTypes.string,
 
-  // flexDirection: PropTypes.oneOf([
-  //   "row",
-  //   "row-reverse",
-  //   "column",
-  //   "column-reverse"
-  // ]),
+  flexDirection: PropTypes.oneOf([
+    "row",
+    "row-reverse",
+    "column",
+    "column-reverse"
+  ]),
 
-  // flexWrap:  PropTypes.oneOf([
-  //   "nowrap",
-  //   "wrap",
-  //   "wrap-reverse"
-  // ]),
+  flexWrap:  PropTypes.oneOf([
+    "nowrap",
+    "wrap",
+    "wrap-reverse"
+  ]),
 
   flexGrow: PropTypes.number,
 
@@ -194,29 +194,58 @@ Box.propTypes = {
 
   gap: PropTypes.number,
 
-  
+  // /** @uxpinignoreprop */
+  // columnGap: PropTypes.number,
 
-  
-  
+  // /** @uxpinignoreprop */
+  // rowGap: PropTypes.number,
+
+  // /** @uxpinignoreprop */
+  // gridColumn: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridRow: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridAutoFlow: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridAutoColumns: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridAutoRows: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridTemplateColumns: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridTemplateRows: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridTemplateAreas: PropTypes.string,
+
+  // /** @uxpinignoreprop */
+  // gridArea: PropTypes.string,
 
 
-  // position: PropTypes.oneOf([
-  //   "static",
-  //   "relative",
-  //   "absolute",
-  //   "fixed",
-  //   "sticky",
-  // ]),
 
-  // top: PropTypes.number,
+  position: PropTypes.oneOf([
+    "static",
+    "relative",
+    "absolute",
+    "fixed",
+    "sticky",
+  ]),
 
-  // right: PropTypes.number,
+  top: PropTypes.number,
 
-  // bottom: PropTypes.number,
+  right: PropTypes.number,
 
-  // left: PropTypes.number,
+  bottom: PropTypes.number,
 
-  // zIndex: PropTypes.string,
+  left: PropTypes.number,
+
+  zIndex: PropTypes.string,
 
   // /** @uxpinignoreprop */
   // maxHeight: PropTypes.string,
@@ -281,10 +310,9 @@ Box.propTypes = {
   // /** @uxpinignoreprop */
   // paddingBlockEnd: PropTypes.string,
 
-  // sx: PropTypes.object,
+  sx: PropTypes.object,
 
-  // /** @uxpinignoreprop */
-  // children: PropTypes.node,
+  children: PropTypes.node,
 };
 
 
