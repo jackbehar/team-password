@@ -192,7 +192,7 @@ Box.propTypes = {
 
   order: PropTypes.number,
 
-  // gap: PropTypes.number,
+  gap: PropTypes.number,
 
   
 
