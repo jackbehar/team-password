@@ -26,7 +26,7 @@ function Box(props) {
       }}
     >
       <div style={{display: "table"}} ref={uxpinRef} >
-     test {/* <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM> */}
+      <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM>
       </div>
     </ThemeProvider>
   );
@@ -35,11 +35,11 @@ function Box(props) {
 
 Box.propTypes = {
 
-  // width: PropTypes.number,
+  width: PropTypes.number,
 
-  // height: PropTypes.number,
+  height: PropTypes.number,
 
-  // bgcolor: PropTypes.oneOf(paletteColors),
+  bgcolor: PropTypes.oneOf(paletteColors),
 
   // /** @uxpinignoreprop */
   // padding: PropTypes.number,
