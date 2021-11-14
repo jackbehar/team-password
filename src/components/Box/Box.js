@@ -20,15 +20,15 @@ function Box(props) {
   const { uxpinRef, ...other } = props;
 
   return (
-    // <ThemeProvider
-    //   theme={{
-    //     spacing: 1,
-    //   }}
-    // >
+    <ThemeProvider
+      theme={{
+        spacing: 1,
+      }}
+    >
       <div style={{display: "table"}} ref={uxpinRef} >
      test {/* <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM> */}
       </div>
-    // </ThemeProvider>
+    </ThemeProvider>
   );
 }
 
