@@ -8,13 +8,15 @@ import { ThemeProvider } from '@mui/system';
 function Typography(props) {
   //const { uxpinRef, ...other } = props;
   return (
-    <ThemeProvider
-      theme={{
-        spacing: 1,
-      }}
-    >
-      <TypographyM {...props} style={{ textDecoration: props.textDecoration }}>{props.children}</TypographyM>
-    </ThemeProvider>
+    // <ThemeProvider
+    //   theme={{
+    //     spacing: 1,
+    //   }}
+    // >
+      <>test
+      </>
+      // <TypographyM {...props} style={{ textDecoration: props.textDecoration }}>{props.children}</TypographyM>
+    // </ThemeProvider>
   )
 }
 

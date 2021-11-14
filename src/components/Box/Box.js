@@ -26,7 +26,7 @@ function Box(props) {
     //   }}
     // >
       <div style={{display: "table"}} ref={uxpinRef} >
-      <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM>
+     test {/* <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM> */}
       </div>
     // </ThemeProvider>
   );
@@ -35,285 +35,285 @@ function Box(props) {
 
 Box.propTypes = {
 
-  width: PropTypes.number,
+  // width: PropTypes.number,
 
-  height: PropTypes.number,
+  // height: PropTypes.number,
 
-  bgcolor: PropTypes.oneOf(paletteColors),
+  // bgcolor: PropTypes.oneOf(paletteColors),
 
-  /** @uxpinignoreprop */
-  padding: PropTypes.number,
+  // /** @uxpinignoreprop */
+  // padding: PropTypes.number,
 
-  paddingTop: PropTypes.number,
+  // paddingTop: PropTypes.number,
 
-  paddingRight: PropTypes.number,
+  // paddingRight: PropTypes.number,
 
-  paddingBottom: PropTypes.number,
+  // paddingBottom: PropTypes.number,
 
-  paddingLeft: PropTypes.number,
+  // paddingLeft: PropTypes.number,
 
-  /** @uxpinignoreprop */
-  margin: PropTypes.number,
+  // /** @uxpinignoreprop */
+  // margin: PropTypes.number,
 
-  marginTop: PropTypes.number,
+  // marginTop: PropTypes.number,
 
-  marginRight: PropTypes.number,
+  // marginRight: PropTypes.number,
 
-  marginBottom: PropTypes.number,
+  // marginBottom: PropTypes.number,
 
-  marginLeft: PropTypes.number,
+  // marginLeft: PropTypes.number,
 
-  border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
+  // border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
 
-  borderColor: PropTypes.oneOf(paletteColors),
+  // borderColor: PropTypes.oneOf(paletteColors),
 
-  borderTop: PropTypes.number,
+  // borderTop: PropTypes.number,
 
-  borderRight: PropTypes.number,
+  // borderRight: PropTypes.number,
 
-  borderBottom: PropTypes.number,
+  // borderBottom: PropTypes.number,
 
-  borderLeft: PropTypes.number,
+  // borderLeft: PropTypes.number,
 
-  borderRadius: PropTypes.number,
+  // borderRadius: PropTypes.number,
 
-  boxShadow: PropTypes.number,
+  // boxShadow: PropTypes.number,
 
-  /** @uxpinignoreprop */
-  displayPrint: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // displayPrint: PropTypes.string,
 
-  typography: PropTypes.oneOf([
-    "h1",
-    "h2",
-    "h3",
-    "h4",
-    "h5",
-    "h6",
-    "subtitle1",
-    "subtitle2",
-    "body1",
-    "body2",
-    "caption",
-    "button",
-    "overline",
-    "inherit"
-  ]),
+  // typography: PropTypes.oneOf([
+  //   "h1",
+  //   "h2",
+  //   "h3",
+  //   "h4",
+  //   "h5",
+  //   "h6",
+  //   "subtitle1",
+  //   "subtitle2",
+  //   "body1",
+  //   "body2",
+  //   "caption",
+  //   "button",
+  //   "overline",
+  //   "inherit"
+  // ]),
 
-  color: PropTypes.oneOf(paletteColors),
+  // color: PropTypes.oneOf(paletteColors),
 
-  fontFamily: PropTypes.string,
+  // fontFamily: PropTypes.string,
 
-  fontSize: PropTypes.number,
+  // fontSize: PropTypes.number,
 
-  fontStyle: PropTypes.oneOf([
-    "normal",
-    "italic",
-    "oblique",
-  ]),
+  // fontStyle: PropTypes.oneOf([
+  //   "normal",
+  //   "italic",
+  //   "oblique",
+  // ]),
 
-  fontWeight: PropTypes.oneOf([
-    "light",
-    "medium",
-    "normal",
-    "bold",
-    "900",
-  ]),
+  // fontWeight: PropTypes.oneOf([
+  //   "light",
+  //   "medium",
+  //   "normal",
+  //   "bold",
+  //   "900",
+  // ]),
 
-  letterSpacing: PropTypes.number,
+  // letterSpacing: PropTypes.number,
 
-  lineHeight: PropTypes.number,
+  // lineHeight: PropTypes.number,
 
-  textAlign: PropTypes.oneOf([
-    "left",
-    "center",
-    "right"
-  ]),
+  // textAlign: PropTypes.oneOf([
+  //   "left",
+  //   "center",
+  //   "right"
+  // ]),
 
-  textDecoration: PropTypes.oneOf([
-    "underline",
-    "overline",
-    "line-through"
-  ]),
+  // textDecoration: PropTypes.oneOf([
+  //   "underline",
+  //   "overline",
+  //   "line-through"
+  // ]),
 
-  display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
+  // display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
   
-  justifyContent: PropTypes.oneOf([
-    "flex-start",
-    "center",
-    "flex-end",
-    "space-between",
-    "space-around",
-    "space-evenly"
-  ]),
+  // justifyContent: PropTypes.oneOf([
+  //   "flex-start",
+  //   "center",
+  //   "flex-end",
+  //   "space-between",
+  //   "space-around",
+  //   "space-evenly"
+  // ]),
 
-  alignContent: PropTypes.oneOf([
-    "stretch",
-    "center",
-    "flex-start",
-    "flex-end",
-    "space-between",
-    "space-around"
-  ]),
+  // alignContent: PropTypes.oneOf([
+  //   "stretch",
+  //   "center",
+  //   "flex-start",
+  //   "flex-end",
+  //   "space-between",
+  //   "space-around"
+  // ]),
 
-  alignItems: PropTypes.oneOf([
-    "flex-start",
-    "center",
-    "flex-end",
-    "stretch",
-    "baseline"
-  ]),
+  // alignItems: PropTypes.oneOf([
+  //   "flex-start",
+  //   "center",
+  //   "flex-end",
+  //   "stretch",
+  //   "baseline"
+  // ]),
 
-  alignSelf: PropTypes.oneOf([
-    "stretch",
-    "center",
-    "start",
-    "end",
-  ]),
+  // alignSelf: PropTypes.oneOf([
+  //   "stretch",
+  //   "center",
+  //   "start",
+  //   "end",
+  // ]),
 
-  /** @uxpinignoreprop */
-  flex: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // flex: PropTypes.string,
 
-  flexDirection: PropTypes.oneOf([
-    "row",
-    "row-reverse",
-    "column",
-    "column-reverse"
-  ]),
+  // flexDirection: PropTypes.oneOf([
+  //   "row",
+  //   "row-reverse",
+  //   "column",
+  //   "column-reverse"
+  // ]),
 
-  flexWrap:  PropTypes.oneOf([
-    "nowrap",
-    "wrap",
-    "wrap-reverse"
-  ]),
+  // flexWrap:  PropTypes.oneOf([
+  //   "nowrap",
+  //   "wrap",
+  //   "wrap-reverse"
+  // ]),
 
-  flexGrow: PropTypes.number,
+  // flexGrow: PropTypes.number,
 
-  flexShrink: PropTypes.number,
+  // flexShrink: PropTypes.number,
 
-  order: PropTypes.number,
+  // order: PropTypes.number,
 
-  gap: PropTypes.number,
+  // gap: PropTypes.number,
 
-  /** @uxpinignoreprop */
-  columnGap: PropTypes.number,
+  // /** @uxpinignoreprop */
+  // columnGap: PropTypes.number,
 
-  /** @uxpinignoreprop */
-  rowGap: PropTypes.number,
+  // /** @uxpinignoreprop */
+  // rowGap: PropTypes.number,
 
-  /** @uxpinignoreprop */
-  gridColumn: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridColumn: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridRow: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridRow: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridAutoFlow: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridAutoFlow: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridAutoColumns: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridAutoColumns: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridAutoRows: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridAutoRows: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridTemplateColumns: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridTemplateColumns: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridTemplateRows: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridTemplateRows: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridTemplateAreas: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridTemplateAreas: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  gridArea: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // gridArea: PropTypes.string,
 
 
 
-  position: PropTypes.oneOf([
-    "static",
-    "relative",
-    "absolute",
-    "fixed",
-    "sticky",
-  ]),
+  // position: PropTypes.oneOf([
+  //   "static",
+  //   "relative",
+  //   "absolute",
+  //   "fixed",
+  //   "sticky",
+  // ]),
 
-  top: PropTypes.number,
+  // top: PropTypes.number,
 
-  right: PropTypes.number,
+  // right: PropTypes.number,
 
-  bottom: PropTypes.number,
+  // bottom: PropTypes.number,
 
-  left: PropTypes.number,
+  // left: PropTypes.number,
 
-  zIndex: PropTypes.string,
+  // zIndex: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  maxHeight: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // maxHeight: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  maxWidth: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // maxWidth: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  minHeight: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // minHeight: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  minWidth: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // minWidth: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  boxSizing: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // boxSizing: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  mx: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // mx: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  my: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // my: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginInline: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginInline: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginInlineStart: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginInlineStart: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginInlineEnd: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginInlineEnd: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginBlock: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginBlock: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginBlockStart: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginBlockStart: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  marginBlockEnd: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // marginBlockEnd: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  px: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // px: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  py: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // py: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingInline: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingInline: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingInlineStart: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingInlineStart: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingInlineEnd: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingInlineEnd: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingBlock: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingBlock: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingBlockStart: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingBlockStart: PropTypes.string,
 
-  /** @uxpinignoreprop */
-  paddingBlockEnd: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // paddingBlockEnd: PropTypes.string,
 
-  sx: PropTypes.object,
+  // sx: PropTypes.object,
 
-  /** @uxpinignoreprop */
-  children: PropTypes.node,
+  // /** @uxpinignoreprop */
+  // children: PropTypes.node,
 };
 
 
