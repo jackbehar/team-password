@@ -146,14 +146,14 @@ Box.propTypes = {
     "space-evenly"
   ]),
 
-  // alignContent: PropTypes.oneOf([
-  //   "stretch",
-  //   "center",
-  //   "flex-start",
-  //   "flex-end",
-  //   "space-between",
-  //   "space-around"
-  // ]),
+  alignContent: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "flex-start",
+    "flex-end",
+    "space-between",
+    "space-around"
+  ]),
 
   // alignItems: PropTypes.oneOf([
   //   "flex-start",
