@@ -41,46 +41,46 @@ Box.propTypes = {
 
   bgcolor: PropTypes.oneOf(paletteColors),
 
-  // /** @uxpinignoreprop */
-  // padding: PropTypes.number,
+  /** @uxpinignoreprop */
+  padding: PropTypes.number,
 
-  // paddingTop: PropTypes.number,
+  paddingTop: PropTypes.number,
 
-  // paddingRight: PropTypes.number,
+  paddingRight: PropTypes.number,
 
-  // paddingBottom: PropTypes.number,
+  paddingBottom: PropTypes.number,
 
-  // paddingLeft: PropTypes.number,
+  paddingLeft: PropTypes.number,
 
-  // /** @uxpinignoreprop */
-  // margin: PropTypes.number,
+  /** @uxpinignoreprop */
+  margin: PropTypes.number,
 
-  // marginTop: PropTypes.number,
+  marginTop: PropTypes.number,
 
-  // marginRight: PropTypes.number,
+  marginRight: PropTypes.number,
 
-  // marginBottom: PropTypes.number,
+  marginBottom: PropTypes.number,
 
-  // marginLeft: PropTypes.number,
+  marginLeft: PropTypes.number,
 
-  // border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
+  border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
 
-  // borderColor: PropTypes.oneOf(paletteColors),
+  borderColor: PropTypes.oneOf(paletteColors),
 
-  // borderTop: PropTypes.number,
+  borderTop: PropTypes.number,
 
-  // borderRight: PropTypes.number,
+  borderRight: PropTypes.number,
 
-  // borderBottom: PropTypes.number,
+  borderBottom: PropTypes.number,
 
-  // borderLeft: PropTypes.number,
+  borderLeft: PropTypes.number,
 
-  // borderRadius: PropTypes.number,
+  borderRadius: PropTypes.number,
 
-  // boxShadow: PropTypes.number,
+  boxShadow: PropTypes.number,
 
-  // /** @uxpinignoreprop */
-  // displayPrint: PropTypes.string,
+  /** @uxpinignoreprop */
+  displayPrint: PropTypes.string,
 
   // typography: PropTypes.oneOf([
   //   "h1",
