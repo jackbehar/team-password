@@ -170,15 +170,15 @@ Box.propTypes = {
     "end",
   ]),
 
-  /** @uxpinignoreprop */
-  flex: PropTypes.string,
+  // /** @uxpinignoreprop */
+  // flex: PropTypes.string,
 
-  flexDirection: PropTypes.oneOf([
-    "row",
-    "row-reverse",
-    "column",
-    "column-reverse"
-  ]),
+  // flexDirection: PropTypes.oneOf([
+  //   "row",
+  //   "row-reverse",
+  //   "column",
+  //   "column-reverse"
+  // ]),
 
   // flexWrap:  PropTypes.oneOf([
   //   "nowrap",
