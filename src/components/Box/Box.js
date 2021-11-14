@@ -135,7 +135,7 @@ Box.propTypes = {
     "line-through"
   ]),
 
-  display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
+  // display: PropTypes.oneOf(['block', 'inline', 'inline-block', 'flex', 'inline-flex', 'grid', 'inline-grid', 'flow-root']),
   
   justifyContent: PropTypes.oneOf([
     "flex-start",
