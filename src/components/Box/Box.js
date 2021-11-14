@@ -188,7 +188,7 @@ Box.propTypes = {
 
   flexGrow: PropTypes.number,
 
-  // flexShrink: PropTypes.number,
+  flexShrink: PropTypes.number,
 
   // order: PropTypes.number,
 
