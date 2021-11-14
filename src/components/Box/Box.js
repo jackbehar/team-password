@@ -194,39 +194,10 @@ Box.propTypes = {
 
   gap: PropTypes.number,
 
-  // /** @uxpinignoreprop */
-  // columnGap: PropTypes.number,
+  
 
-  // /** @uxpinignoreprop */
-  // rowGap: PropTypes.number,
-
-  // /** @uxpinignoreprop */
-  // gridColumn: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridRow: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoFlow: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoColumns: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridAutoRows: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateColumns: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateRows: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridTemplateAreas: PropTypes.string,
-
-  // /** @uxpinignoreprop */
-  // gridArea: PropTypes.string,
-
+  
+  
 
 
   // position: PropTypes.oneOf([
