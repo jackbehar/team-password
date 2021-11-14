@@ -190,9 +190,9 @@ Box.propTypes = {
 
   flexShrink: PropTypes.number,
 
-  order: PropTypes.number,
+  // order: PropTypes.number,
 
-  gap: PropTypes.number,
+  // gap: PropTypes.number,
 
   
 
