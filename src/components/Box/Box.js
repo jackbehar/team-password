@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import { Box as BoxM, ThemeProvider } from '@mui/system';
 import { paletteColors } from '../UXPinWrapper/colors'
 
-/**
- * @uxpinwrappers
- * NonResizableWrapper
- */
+
 function Box(props) {
 
   const commonStyles = {
