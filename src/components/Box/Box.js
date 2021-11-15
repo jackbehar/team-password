@@ -35,47 +35,47 @@ function Box(props) {
 
 Box.propTypes = {
 
-  width: PropTypes.number,
+  width: PropTypes.string,
 
-  height: PropTypes.number,
+  height: PropTypes.string,
 
   bgcolor: PropTypes.oneOf(paletteColors),
 
   /** @uxpinignoreprop */
-  padding: PropTypes.number,
+  padding: PropTypes.string,
 
-  paddingTop: PropTypes.number,
+  paddingTop: PropTypes.string,
 
-  paddingRight: PropTypes.number,
+  paddingRight: PropTypes.string,
 
-  paddingBottom: PropTypes.number,
+  paddingBottom: PropTypes.string,
 
-  paddingLeft: PropTypes.number,
+  paddingLeft: PropTypes.string,
 
   /** @uxpinignoreprop */
-  margin: PropTypes.number,
+  margin: PropTypes.string,
 
-  marginTop: PropTypes.number,
+  marginTop: PropTypes.string,
 
-  marginRight: PropTypes.number,
+  marginRight: PropTypes.string,
 
-  marginBottom: PropTypes.number,
+  marginBottom: PropTypes.string,
 
-  marginLeft: PropTypes.number,
+  marginLeft: PropTypes.string,
 
   border: PropTypes.oneOf(['solid', 'dashed', 'dotted']),
 
   borderColor: PropTypes.oneOf(paletteColors),
 
-  borderTop: PropTypes.number,
+  borderTop: PropTypes.string,
 
-  borderRight: PropTypes.number,
+  borderRight: PropTypes.string,
 
-  borderBottom: PropTypes.number,
+  borderBottom: PropTypes.string,
 
-  borderLeft: PropTypes.number,
+  borderLeft: PropTypes.string,
 
-  borderRadius: PropTypes.number,
+  borderRadius: PropTypes.string,
 
   boxShadow: PropTypes.number,
 
@@ -103,7 +103,7 @@ Box.propTypes = {
 
   fontFamily: PropTypes.string,
 
-  fontSize: PropTypes.number,
+  fontSize: PropTypes.string,
 
   fontStyle: PropTypes.oneOf([
     "normal",
@@ -119,9 +119,9 @@ Box.propTypes = {
     "900",
   ]),
 
-  letterSpacing: PropTypes.number,
+  letterSpacing: PropTypes.string,
 
-  lineHeight: PropTypes.number,
+  lineHeight: PropTypes.string,
 
   textAlign: PropTypes.oneOf([
     "left",
