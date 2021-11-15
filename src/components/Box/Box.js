@@ -14,18 +14,13 @@ function Box(props) {
     textDecoration: props.textDecoration
   };
 
-  const { uxpinRef, ...other } = props;
+ 
 
   return (
-    <ThemeProvider
-      theme={{
-        // spacing: 1,
-      }}
-    >
-      <div style={{display: "table"}} ref={uxpinRef} >
+
+      <div >
       <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM>
       </div>
-    </ThemeProvider>
   );
 }
 
