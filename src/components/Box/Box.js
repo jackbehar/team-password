@@ -18,7 +18,7 @@ function Box(props) {
 
   return (
 
-      <div style={{display: "table"}} ref={uxpinRef} >
+      <div  ref={uxpinRef} >
       <BoxM sx={{ ...commonStyles }} {...props} >{props.children}</BoxM>
       </div>
   );
