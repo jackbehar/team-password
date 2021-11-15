@@ -60,6 +60,47 @@ Stack.propTypes = {
    */
   hasDivider: PropTypes.bool,
 
+  justifyContent: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "space-between",
+    "space-around",
+    "space-evenly"
+  ]),
+
+  alignContent: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "flex-start",
+    "flex-end",
+    "space-between",
+    "space-around"
+  ]),
+
+  alignItems: PropTypes.oneOf([
+    "flex-start",
+    "center",
+    "flex-end",
+    "stretch",
+    "baseline"
+  ]),
+
+  alignSelf: PropTypes.oneOf([
+    "stretch",
+    "center",
+    "start",
+    "end",
+  ]),
+
+  paddingTop: PropTypes.string,
+
+  paddingRight: PropTypes.string,
+
+  paddingBottom: PropTypes.string,
+
+  paddingLeft: PropTypes.string,
+  
   /**
    * The system prop that allows defining system overrides as well as additional CSS styles.
    */
