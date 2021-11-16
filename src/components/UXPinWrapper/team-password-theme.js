@@ -20,7 +20,10 @@ const boilerplateTheme = {
       main: '#F2F5F9',
       light: "#F9F9F9",
       dark: "#DFE7EE",
-      contrastText: '#fff',
+      contrastText: '#ffffff',
+    },
+    error:{
+      main:"#ff1600"
     },
     text: {
       primary: "#10313e",
