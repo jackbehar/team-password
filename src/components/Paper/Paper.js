@@ -1,10 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PaperM from "@mui/material/Paper";
+import Box from "../Box/Box"
 
 function Paper(props) {
+  const { paddingTop,paddingBottom, paddingLeft, paddingRight, marginTop, marginBottom, marginLeft, marginRight,  ...other } = props;
+
     return (
-        <PaperM {...props}>{props.children}</PaperM>
+    <PaperM {...other} sx={{
+      paddingTop: paddingTop,
+      paddingBottom: paddingBottom,
+      paddingLeft:paddingLeft,
+      paddingRight:paddingRight,
+    }}>{props.children}</PaperM>
+
     )
 } 
 
@@ -40,13 +49,19 @@ Paper.propTypes = {
 
   /**
    * If `true`, rounded corners are disabled.
-   * @uxpinignoreprop
    */
   square: PropTypes.bool,
 
+  paddingTop: PropTypes.string,
+
+  paddingRight: PropTypes.string,
+
+  paddingBottom: PropTypes.string,
+
+  paddingLeft: PropTypes.string,
+
   /**
    * Custom Style Object
-   * @uxpinignoreprop
    */
   sx: PropTypes.object
 };
