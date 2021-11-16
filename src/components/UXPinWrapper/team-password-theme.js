@@ -90,8 +90,20 @@ const boilerplateTheme = {
         },
       }
     },
-    '.MuiBox-root': {
-      bgcolor: "#000000"
+    MuiCheckbox: {
+      styleOverrides: {
+        root: {
+          color: '#dddddd',
+        }
+      }
+    },
+    MuiFormControlLabel: {
+      styleOverrides: {
+        label: {
+          color: '#10313e',
+          fontSize: '14px'
+        }
+      }
     },
   },
 };
