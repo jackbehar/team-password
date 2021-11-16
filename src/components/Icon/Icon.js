@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import IconM from '@mui/material/Icon';
 import { iconVariants } from './icon-variants'
+import { paletteColors } from '../UXPinWrapper/colors'
 
 let icons = document.createElement('link');
 icons.setAttribute('href', 'https://fonts.googleapis.com/icon?family=Material+Icons');
@@ -10,7 +11,7 @@ document.head.appendChild(icons);
 
 
 function Icon (props) {
-    return <IconM{...props}>{props.children}</IconM>
+    return <IconM {...props} sx={{ color: props.color}} >{props.children}</IconM>
 }
 
 Icon.propTypes = {
@@ -24,7 +25,7 @@ Icon.propTypes = {
   /**
    * The color of the component. It supports those theme colors that make sense for this component.
    */
-  color: PropTypes.oneOf(['inherit', 'action', 'disabled', 'primary', 'secondary', 'error', 'info', 'success', 'warning']),
+  color: PropTypes.oneOf(paletteColors),
 
   /**
    * The fontSize applied to the icon. Defaults to 24px, but can be configure to inherit font size.
