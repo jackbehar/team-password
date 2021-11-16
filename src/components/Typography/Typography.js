@@ -95,25 +95,25 @@ Typography.propTypes = {
      * Top Padding.
      * In pixels
      */
-  paddingTop: PropTypes.number,
+  paddingTop: PropTypes.string,
 
   /**
    * Right Padding.
    * In pixels
    */
-  paddingRight: PropTypes.number,
+  paddingRight: PropTypes.string,
 
   /**
    * Bottom Padding.
    * In pixels
    */
-  paddingBottom: PropTypes.number,
+  paddingBottom: PropTypes.string,
 
   /**
    * Left Padding.
    * In pixels  
    */
-  paddingLeft: PropTypes.number,
+  paddingLeft: PropTypes.string,
   
   /**
    * If `true`, the text will have a bottom margin.
