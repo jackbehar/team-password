@@ -53,7 +53,7 @@ const boilerplateTheme = {
       lineHeight: "28px",
     },
     button: {
-      textTransform: "capitalize",
+      textTransform: "inherit",
       fontWeight: "700",
     },
   },
