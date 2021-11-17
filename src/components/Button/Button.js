@@ -54,7 +54,7 @@ Button.propTypes ={
   /**
    * The type of button.
    */
-  variant: PropTypes.oneOf(["text", "outlined", "contained", "dashed"]),
+  variant: PropTypes.oneOf(["text", "outlined", "contained", "ghost"]),
 
   /**
    * The HREF of the button.

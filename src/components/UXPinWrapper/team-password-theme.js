@@ -60,6 +60,15 @@ const boilerplateTheme = {
   components: {
     // Name of the component
     MuiButton: {
+      variants: [
+        {
+          props: { variant: 'ghost' },
+          style: {
+            backgroundColor: "#5ebf9926",
+            color:"#5ebf99"
+          },
+        },
+      ],
       styleOverrides: {
         // Name of the slot
         root: {
