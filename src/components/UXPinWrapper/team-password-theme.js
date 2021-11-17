@@ -22,8 +22,8 @@ const boilerplateTheme = {
       dark: "#DFE7EE",
       contrastText: '#ffffff',
     },
-    error:{
-      main:"#ff1600"
+    error: {
+      main: "#ff1600"
     },
     text: {
       primary: "#10313e",
@@ -65,7 +65,10 @@ const boilerplateTheme = {
           props: { variant: 'ghost' },
           style: {
             backgroundColor: "#5ebf9926",
-            color:"#5ebf99"
+            color: "#5ebf99",
+            fontWeight: "bold",
+            borderRadius: 0,
+            height: "36px"
           },
         },
       ],
